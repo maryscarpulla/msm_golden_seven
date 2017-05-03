@@ -77,7 +77,7 @@ class DirectorsController < ApplicationController
 
     redirect_to("/directors/#{update_director.id}")
   end
-  
+
 
 
 end
