@@ -1,0 +1,27 @@
+<h1>All Directors</h1>
+
+</div>
+
+
+<% @list_of_all_directors.each do |the_director| %>
+<!-- #just control code, so no = sign-->
+
+<img src ="<%= the_director.image_url%>">
+<p>
+  <%= the_director.name %>
+</p>
+<p>
+  <%= the_director.dob %>
+</p>
+
+<p>
+  <%= the_director.bio %>
+</p>
+
+<div>
+  <a href = "/directors/<%= the_director.id %>">Show Details</a>
+  <a href = "/directors/<%= the_director.id %>/edit">Edit</a>
+  <a href = "/directors/delete_director/<%= the_director.id %>">Delete</a>
+</div>
+
+<% end %>
